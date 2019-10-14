@@ -73,7 +73,7 @@ private StudentService studentService;
     @GetMapping(value = {"/delete/{studentId}"})
     public String deleteStudent(@PathVariable Long studentId, Model model) {
         studentService.deleteStudentById(studentId);
-        return "redirect:home/Student/list";
+        return "redirect:/eregistar/Student/list";
     }
 
 
